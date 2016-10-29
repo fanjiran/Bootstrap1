@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>栅格</title>
+    <link rel="stylesheet" href="../frameworks/bootstrap-3.3.0-dist/css/bootstrap.min.css">
+</head>
+<style>
+    .left{
+        background: rosybrown;
+    }
+    .right{
+        background: #2d6ca2;
+    }
+</style>
+<body>
+    <div class="container">
+        <!--极小769小 992中 1200-->
+        <!--响应式-->
+        <div class="row">
+            <div class="left col-md-3 col-sm-6">
+                在移动设备中如果想要显示的内容看上去不那么小需要添加如下meta
+                one</div>
+            <div class="right col-md-3 col-sm-6">two</div>
+            <div class="clearfix visible-sm"></div>
+            <div class="left col-md-3 col-sm-6">three</div>
+            <div class="right col-md-3 col-sm-6">four</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="left col-md-1">1</div>
+            <div class="right col-md-1">2</div>
+            <div class="left col-md-1">3</div>
+            <div class="right col-md-1">4</div>
+            <div class="left col-md-1">5</div>
+            <div class="right col-md-1">6</div>
+            <div class="left col-md-1">7</div>
+            <div class="right col-md-1">8</div>
+            <div class="left col-md-1">9</div>
+            <div class="right col-md-1">10</div>
+            <div class="left col-md-1">11</div>
+            <div class="right col-md-1">12</div>
+        </div>
+        <div class="row">
+            <div class="left col-md-6">1</div>
+            <div class="right col-md-6">2</div>
+            <div class="left col-md-3">3</div>
+        </div>
+        <br>
+        <!--第三行-->
+        <div class="row">
+            <div class="left col-md-3">left</div>
+            <div class="col-md-1"></div>
+            <div class="right col-md-8">right</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="left col-md-3">left</div>
+            <div class="right col-md-8 col-md-offset-1" >right</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="left col-md-3">left</div>
+            <div class="right col-md-8 col-md-push-1" >right</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="left col-md-3 col-md-push-9">left</div>
+            <div class="right col-md-8 col-md-pull-3 ">right</div>
+        </div>
+        <br>
+        <!--列的嵌套-->
+        <div class="row">
+            <div class="left col-md-3 col-md-push-9">left</div>
+            <div class="right col-md-8 col-md-pull-3 ">
+                <div class="row">
+                    <div class="col-md-6 left">one</div>
+                    <div class="col-md-6 right">two</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width">
+    <title>demo</title>
+    <link rel="stylesheet" href="../frameworks/bootstrap-3.3.0-dist/css/bootstrap.min.css">
+    <script src="../frameworks/jquery-2.1.4/jquery.min.js"></script>
+    <script src="../frameworks/bootstrap-3.3.0-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--1.通过属性绑定js-->
+        <button class="btn btn-success" data-toggle="modal" data-target="#modalOne">data-打开</button>
+        <!--2.通过jqueury绑定js-->
+        <button class="OpenBtn btn btn-success">js-打开</button>
+        <script>
+            $(function(){
+                //方法
+                $("#modalOne").modal({
+                    keyboard:true,
+                    remote:"addContent.html"
+                });
+                $(".OpenBtn").on("click",function(){
+                    $("#modalOne").modal("show");
+                })
+
+                //事件
+                $("#modalOne").on("show.bs.modal",function(){
+                    console.log("show");
+                });
+                //事件
+                $("#modalOne").on("shown.bs.modal",function(){
+                    console.log("shown");
+                })
+            })
+        </script>
+<!--js插件 css插件之上-->
+        <div class="modal" id="modalOne">
+            <div class="modal-dialog">
+                <!--模态框的内容区-->
+                <div class="modal-content">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

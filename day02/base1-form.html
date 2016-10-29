@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全局样式</title>
+    <link rel="stylesheet" href="../frameworks/bootstrap-3.3.0-dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <legend>注册</legend>
+            <fieldset>
+                <div class="form-group has-feedback has-success">
+                <label class="control-label">用户名</label>
+                <input type="text" class="form-control" placeholder="请输入">
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-error">
+                    <label class="control-label">密码：</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group has-warning">
+                    <label>出生日期</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>姓名</label>
+                    <div class="radio">
+                        <label><input type="radio" name="gender" value="male">男</label>
+                        <label><input type="radio" name="gender" value="female">女</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>爱好</label>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="gender" value="male">足球</label>
+                        <label><input type="checkbox" name="gender" value="female">篮球</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>方向</label>
+                    <select class="form-control" multiple>
+                        <option value="javaEE">javaEE</option>
+                        <option value="IOS">IOS</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>简介</label>
+                    <textarea name="description" class="form-control"></textarea>
+                </div>
+            </fieldset>
+        </form>
+
+        <!--第二个form-->
+
+        <form action="#" class="form-inline">
+            <legend>注册</legend>
+            <fieldset>
+                <div class="form-group has-feedback has-success">
+                    <label class="control-label col-sm-3">用户名</label>
+                    <input type="text" class="form-control" placeholder="请输入">
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-error">
+                    <label class="control-label">密码：</label>
+                    <input type="text" class="form-control">
+                </div>
+                </fieldset>
+            </form>
+    </div>
+</body>
+</html>

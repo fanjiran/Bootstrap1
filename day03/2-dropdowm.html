@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width">
+    <title>下拉菜单</title>
+    <link rel="stylesheet" href="../frameworks/bootstrap-3.3.0-dist/css/bootstrap.min.css">
+    <script src="../frameworks/jquery-2.1.4/jquery.min.js"></script>
+    <script src="../frameworks/bootstrap-3.3.0-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <br><br><br><br><br><br><br><br><br><br>
+        <div class="dropdown open dropup">
+            <button class="btn btn-default" data-toggle="dropdown">
+                请选择
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">第一部分</li>
+                <li><a href="">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    修改
+                </a></li>
+                <li class="disabled"><a href="">
+                    <span class="glyphicon glyphicon-remove"></span>
+                    删除
+                </a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    添加
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

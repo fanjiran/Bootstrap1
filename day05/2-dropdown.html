@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width">
+    <title>demo</title>
+    <link rel="stylesheet" href="../frameworks/bootstrap-3.3.0-dist/css/bootstrap.min.css">
+    <script src="../frameworks/jquery-2.1.4/jquery.min.js"></script>
+    <script src="../frameworks/bootstrap-3.3.0-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn btn-default">下来菜单</button>
+            <button class="btn btn-default" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="">one</a></li>
+                <li><a href="">two</a></li>
+                <li><a href="">three</a></li>
+                <li><a href="">four</a></li>
+            </ul>
+        </div>
+<h2>通过js</h2>
+        <script>
+            $(function(){
+                $("#two").dropdown();
+                $("#openBtn").on("click",function(){
+
+                })
+            })
+        </script>
+        <div class="btn-group">
+            <button class="btn btn-default">下来菜单</button>
+            <button class="btn btn-default" data-toggle="dropdown" id="openBtn">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <ul class="dropdown-menu" id="two">
+                <li><a href="">one</a></li>
+                <li><a href="">two</a></li>
+                <li><a href="">three</a></li>
+                <li><a href="">four</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

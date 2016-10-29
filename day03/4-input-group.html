@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width">
+    <title>bs输入框</title>
+    <link rel="stylesheet" href="../frameworks/bootstrap-3.3.0-dist/css/bootstrap.min.css">
+    <script src="../frameworks/jquery-2.1.4/jquery.min.js"></script>
+    <script src="../frameworks/bootstrap-3.3.0-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>普通输入框</h2>
+        <form action="">
+            <fieldset>
+                <div class="form-group has-feedback">
+                    <label class="control-label">用户名</label>
+                    <input type="text" class="form-control">
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+            </fieldset>
+        </form>
+        <h2>普通输入框-radio</h2>
+        <form action="">
+            <fieldset>
+                <div class="input-group">
+                    <input type="text" class="input-group-addon">
+                    <input type="radio" class="form-control">
+
+                </div>
+            </fieldset>
+        </form>
+        <h2>普通输入框组</h2>
+        <form action="">
+            <fieldset>
+                <div class="input-group">
+                    <label class="input-group-addon label-success">用户名</label>
+                    <input type="text" class="form-control">
+
+                </div>
+            </fieldset>
+        </form>
+        <h2>普通输入框-btn</h2>
+        <form action="">
+            <fieldset>
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button class="btn btn-info">用户名</button>
+                    </div>
+
+                    <input type="text" class="form-control">
+
+                </div>
+            </fieldset>
+        </form>
+        <h2>普通输入框-btn-group</h2>
+        <form action="">
+            <fieldset>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-btn">
+                            <button class=""></button>
+                           <button class="btn btn-info">用户名</button>
+                           <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                               <ul class="dropdown-menu">
+                                   <span class="caret"></span>
+                                   <li><a href="">1</a></li>
+                                   <li><a href="">2</a></li>
+                                   <li><a href="">3</a></li>
+                               </ul>
+                           </button>
+                    </div>
+                    <input type="text" class="form-control">
+                   
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
